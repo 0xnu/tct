@@ -1,0 +1,6 @@
+Flask==1.1.2
+postcodes-io-api==0.0.4
+pprint==0.1
+python-dotenv==0.14.0
+requests==2.24.0
+Werkzeug==1.0.1

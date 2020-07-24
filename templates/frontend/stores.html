@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Partner Stores{% endblock %} -  Tails.com</h1>
+{% endblock %}
+
+{% block content %}
+  <ul>
+  {% for store in stores %}
+      <li>{{ store.name }}, {{ store.postcode }}<br>
+      <b>Latitude: </b>{{ store.latitude }}, <b>Longitude: </b>{{ store.longitude }}<br>
+        <b>Nearest 10 postcodes:</b>
+        <ul>
+          {% for postcode, distance in store.nearest %}
+            <li>{{ postcode }} at a distance of {{ distance }} meters.</li>
+          {% endfor %}
+        </ul>
+      </li><br>
+  {% endfor %}
+  </ul>
+{% endblock %}

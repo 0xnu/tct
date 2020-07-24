@@ -1,0 +1,13 @@
+# OS X files
+.history
+.htaccess
+.DS_Store
+
+# Python
+venv_dev_tails
+__pycache__
+
+# Others
+.vscode
+Procfile
+
